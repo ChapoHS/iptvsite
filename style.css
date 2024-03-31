@@ -1,0 +1,329 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #007bff; /* Tonalidade azul */
+  --second-color: #050202;
+  --black-color: #fdfdfd;
+}
+
+body {
+  background-image: url("https://drive.google.com/uc?export=view&id=1uCohtd5e8ZjrZrhykzct1o1DAE9JNVfS");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box {
+  position: relative;
+  width: 450px;
+  backdrop-filter: blur(25px);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 7.5em 2.5em 4em 2.5em;
+  color: var(--second-color);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 140px;
+  height: 70px;
+  border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+  font-size: 30px;
+  color: var(--black-color);
+}
+
+.login-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 50%;
+  background: transparent;
+  box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.login-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 50%;
+  background: transparent;
+  box-shadow: -15px 0 0 0 var(--primary-color);
+}
+
+.input_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  background: transparent;
+  color: var(--second-color);
+  padding-inline: 20px 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+}
+
+#user {
+  margin-bottom: 10px;
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.2s;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid .label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: var(--black-color);
+  padding: 0 10px;
+}
+
+.icon {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.input-submit {
+  width: 100%;
+  height: 50px;
+  background: #0a63e9;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-submit:hover {
+  background: var();
+}
+
+.register {
+  text-align: center;
+}
+
+.register a {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 564px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .login_box {
+    padding: 7.5em 1.5em 4em 1.5em;
+  }
+}
+body {
+  background-image: url("https://cdn.discordapp.com/attachments/1137173841337135105/1137173916612313158/bg_hween.png?ex=6610913d&is=65fe1c3d&hm=16906b339acb65240b8a8bfa404b8984c543cbe90c1f367629ef0251761f6461&");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login_box {
+  position: relative;
+  width: 450px;
+  backdrop-filter: blur(25px);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 7.5em 2.5em 4em 2.5em;
+  color: var(--black-color); /* Mudança de cor do texto para branco */
+  background-color: rgba(255, 255, 255, 0.226); /* Adicionando fundo branco com transparência */
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.input-field {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência para os campos de entrada */
+  color: var(--second-color); /* Cor do texto nos campos de entrada */
+  padding-inline: 20px 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.2s;
+  background-color: var(--primary-color); /* Cor de fundo do label */
+  border-radius: 30px;
+  color: var(--black-color); /* Cor do texto do label */
+  padding: 0 10px;
+}
+
+.input-submit {
+  width: 100%;
+  height: 50px;
+  background: #0a63e9;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-submit:hover {
+  background: var(--primary-color); /* Mudança de cor no hover para corresponder ao primary-color */
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+.input-field {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--second-color);
+  padding-inline: 20px 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  top: -10px; /* Ajuste para o rótulo ficar fixo acima do campo */
+  left: 20px;
+  transition: 0.2s;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: var(--black-color);
+  padding: 0 10px;
+}
+
+.icon {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 20px;
+}
+
+#user-container {
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+#password-container {
+  margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+
+.login_box {
+  position: relative;
+  width: 450px;
+  backdrop-filter: blur(25px);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 7.5em 2.5em 4em 2.5em;
+  color: var(--black-color); /* Mudança de cor do texto para branco */
+  background-color: rgba(255, 255, 255, 0.315); /* Adicionando fundo branco com transparência */
+  box-shadow: 0px 0px 10px 2px rgba(5, 5, 5, 0);
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animação de slide-up */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Aplicando animações aos elementos */
+.login_box,
+.input-container,
+.input-submit,
+.register {
+  animation: fadeIn 1s ease forwards, slideUp 0.5s ease forwards;
+}
+
+/* Aplicando animação apenas ao título do login */
+.login-header {
+  animation: fadeIn 1s ease forwards;
+}
